@@ -56,6 +56,7 @@
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(12, 20);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(434, 52);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "0";
@@ -169,6 +170,7 @@
             this.P_rownosc.TabIndex = 11;
             this.P_rownosc.Text = "=";
             this.P_rownosc.UseVisualStyleBackColor = true;
+            this.P_rownosc.Click += new System.EventHandler(this.P_rownosc_Click);
             // 
             // P_trzy
             // 
@@ -212,6 +214,7 @@
             this.P_pierwiastek.TabIndex = 15;
             this.P_pierwiastek.Text = "√";
             this.P_pierwiastek.UseVisualStyleBackColor = true;
+            this.P_pierwiastek.Click += new System.EventHandler(this.P_pierwiastek_Click);
             // 
             // P_dzielenie
             // 
@@ -222,6 +225,7 @@
             this.P_dzielenie.TabIndex = 14;
             this.P_dzielenie.Text = "/";
             this.P_dzielenie.UseVisualStyleBackColor = true;
+            this.P_dzielenie.Click += new System.EventHandler(this.P_dzielenie_Click);
             // 
             // P_minus
             // 
@@ -232,6 +236,7 @@
             this.P_minus.TabIndex = 13;
             this.P_minus.Text = "-";
             this.P_minus.UseVisualStyleBackColor = true;
+            this.P_minus.Click += new System.EventHandler(this.P_minus_Click);
             // 
             // P_procent
             // 
@@ -242,6 +247,7 @@
             this.P_procent.TabIndex = 20;
             this.P_procent.Text = "%";
             this.P_procent.UseVisualStyleBackColor = true;
+            this.P_procent.Click += new System.EventHandler(this.P_procent_Click);
             // 
             // P_znak
             // 
@@ -252,6 +258,7 @@
             this.P_znak.TabIndex = 19;
             this.P_znak.Text = "+/-";
             this.P_znak.UseVisualStyleBackColor = true;
+            this.P_znak.Click += new System.EventHandler(this.P_znak_Click);
             // 
             // P_razy
             // 
@@ -262,6 +269,7 @@
             this.P_razy.TabIndex = 18;
             this.P_razy.Text = "x";
             this.P_razy.UseVisualStyleBackColor = true;
+            this.P_razy.Click += new System.EventHandler(this.P_razy_Click);
             // 
             // P_plus
             // 
@@ -272,6 +280,7 @@
             this.P_plus.TabIndex = 17;
             this.P_plus.Text = "+";
             this.P_plus.UseVisualStyleBackColor = true;
+            this.P_plus.Click += new System.EventHandler(this.P_plus_Click);
             // 
             // Form1
             // 
@@ -299,6 +308,8 @@
             this.Controls.Add(this.P_jeden);
             this.Controls.Add(this.P_cztery);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Kalkulator";
             this.ResumeLayout(false);

@@ -2,6 +2,13 @@ namespace Kalkulator_z_zegarem
 {
     public partial class Form1 : Form
     {
+
+        private decimal wartosc1 = 0;  // miejsce na zmienne
+        private decimal wartosc2 = 0;
+        private decimal wynik = 0;
+        private string dzialanie = "+";
+
+
         public Form1()
         {
             InitializeComponent();
@@ -29,7 +36,7 @@ namespace Kalkulator_z_zegarem
 
         private void P_jeden_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0")
+            if (textBox1.Text == "0")        // warunek usuwaj¹cy pocz¹tkowe zero z wyœwietlacza
             {
                 textBox1.Text = "1";
             }
@@ -138,6 +145,73 @@ namespace Kalkulator_z_zegarem
         private void P_clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
+            wartosc1 = 0;
+        }
+
+        private void P_znak_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Contains("-"))
+            {
+                textBox1.Text = textBox1.Text.Trim('-');
+            }
+            else
+            {
+                textBox1.Text = "-" + textBox1.Text;
+            }
+        }
+
+        private void P_minus_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "-";
+        }
+
+        private void P_plus_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "+";
+        }
+
+        private void P_razy_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "*";
+        }
+
+        private void P_dzielenie_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "/";
+        }
+
+        private void P_procent_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "%";
+        }
+
+        private void P_pierwiastek_Click(object sender, EventArgs e)
+        {
+            wartosc1 = decimal.Parse(textBox1.Text);
+            textBox1.Clear();
+            dzialanie = "`";   // przypisalem pierwiastkowanie do tyldy
+        }
+
+        private void P_rownosc_Click(object sender, EventArgs e)
+        {
+            switch (dzialanie)
+            {
+                case "-":
+                    wartosc2 = decimal.Parse(textBox1.Text);
+                    wynik = wartosc1 - wartosc2;
+                    textBox1.Text = wynik.ToString();
+                break;
+            }
         }
     }
 }
