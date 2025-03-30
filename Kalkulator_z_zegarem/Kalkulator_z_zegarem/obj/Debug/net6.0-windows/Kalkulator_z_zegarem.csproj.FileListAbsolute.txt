@@ -1,0 +1,17 @@
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\bin\Debug\net6.0-windows\Kalkulator_z_zegarem.exe
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\bin\Debug\net6.0-windows\Kalkulator_z_zegarem.deps.json
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\bin\Debug\net6.0-windows\Kalkulator_z_zegarem.runtimeconfig.json
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\bin\Debug\net6.0-windows\Kalkulator_z_zegarem.dll
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\bin\Debug\net6.0-windows\Kalkulator_z_zegarem.pdb
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.csproj.AssemblyReference.cache
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.Form1.resources
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.csproj.GenerateResource.cache
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.AssemblyInfoInputs.cache
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.AssemblyInfo.cs
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.csproj.CoreCompileInputs.cache
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.dll
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\refint\Kalkulator_z_zegarem.dll
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.pdb
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.genruntimeconfig.cache
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\ref\Kalkulator_z_zegarem.dll
