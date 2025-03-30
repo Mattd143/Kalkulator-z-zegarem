@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulator_z_zegarem", "Kalkulator_z_zegarem\Kalkulator_z_zegarem.csproj", "{90D660D0-1842-4714-85CD-0D935C7D92DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90D660D0-1842-4714-85CD-0D935C7D92DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D660D0-1842-4714-85CD-0D935C7D92DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D660D0-1842-4714-85CD-0D935C7D92DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D660D0-1842-4714-85CD-0D935C7D92DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7B0CF77-B48E-4CA7-8D00-4036152A4FAF}
+	EndGlobalSection
+EndGlobal
