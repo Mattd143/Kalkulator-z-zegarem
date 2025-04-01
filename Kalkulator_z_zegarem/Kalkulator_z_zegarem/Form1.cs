@@ -162,7 +162,7 @@ namespace Kalkulator_z_zegarem
 
         private void P_minus_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
+            wartosc1 = decimal.Parse(textBox1.Text);  // wyskakuje blad podczas odejmowania liczb z przecinkiem
             textBox1.Clear();
             dzialanie = "-";
         }
