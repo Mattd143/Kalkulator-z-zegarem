@@ -238,10 +238,10 @@ namespace Kalkulator_z_zegarem
             switch (dzialanie)
             {
                 case "-":
-                    if (tosamodzialanie == false) 
+                    if (tosamodzialanie == false && !string.IsNullOrEmpty(textBox1.Text))
                     {
                         wartosc2 = decimal.Parse(textBox1.Text);
-                    }   
+                    }
                     wynik = wartosc1 - wartosc2;
                     textBox1.Text = wynik.ToString();
                     wartosc1 = wynik;
@@ -249,7 +249,10 @@ namespace Kalkulator_z_zegarem
 
                     break;
                 case "+":
-                    wartosc2 = decimal.Parse(textBox1.Text);
+                    if (!string.IsNullOrEmpty(textBox1.Text))        // warunek ktory umozliwia klikniecie dzialanie i od razu znaku rownosci
+                    {
+                        wartosc2 = decimal.Parse(textBox1.Text);
+                    }
                     wynik = wartosc1 + wartosc2;
                     textBox1.Text = wynik.ToString();
                     if (tosamodzialanie == false)
@@ -259,17 +262,27 @@ namespace Kalkulator_z_zegarem
                     }
                     break;
                 case "/":
-                    if (tosamodzialanie == false)
+                    if (tosamodzialanie == false && !string.IsNullOrEmpty(textBox1.Text))
                     {
                         wartosc2 = decimal.Parse(textBox1.Text);
                     }
-                    wynik = wartosc1 / wartosc2;
-                    textBox1.Text = wynik.ToString();
-                    wartosc1 = wynik;
-                    tosamodzialanie = true;
+                    if (wartosc2 != 0) 
+                    {
+                        wynik = wartosc1 / wartosc2;
+                        textBox1.Text = wynik.ToString();
+                        wartosc1 = wynik;
+                        tosamodzialanie = true;
+                    }
+                    else
+                    {
+                        textBox1.Text = "B³¹d, nie mo¿na dzieliæ przez zero";
+                    }
                     break;
                 case "*":
-                    wartosc2 = decimal.Parse(textBox1.Text);
+                    if (!string.IsNullOrEmpty(textBox1.Text))
+                    {
+                        wartosc2 = decimal.Parse(textBox1.Text);
+                    }
                     wynik = wartosc1 * wartosc2;
                     textBox1.Text = wynik.ToString();
                     if (tosamodzialanie == false)
@@ -279,7 +292,7 @@ namespace Kalkulator_z_zegarem
                     }
                     break;
                 case "%":
-                    if (tosamodzialanie == false)
+                    if (tosamodzialanie == false && !string.IsNullOrEmpty(textBox1.Text))
                     {
                         wartosc2 = decimal.Parse(textBox1.Text);
                     }
