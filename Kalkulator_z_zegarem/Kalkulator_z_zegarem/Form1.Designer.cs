@@ -73,6 +73,7 @@
             this.P_cztery.Text = "4";
             this.P_cztery.UseVisualStyleBackColor = true;
             this.P_cztery.Click += new System.EventHandler(this.P_cztery_Click);
+            this.P_cztery.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_cztery.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_jeden
@@ -85,6 +86,7 @@
             this.P_jeden.Text = "1";
             this.P_jeden.UseVisualStyleBackColor = true;
             this.P_jeden.Click += new System.EventHandler(this.P_jeden_Click);
+            this.P_jeden.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_jeden.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_zero
@@ -97,6 +99,7 @@
             this.P_zero.Text = "0";
             this.P_zero.UseVisualStyleBackColor = true;
             this.P_zero.Click += new System.EventHandler(this.P_zero_Click);
+            this.P_zero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_zero.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_siedem
@@ -110,6 +113,7 @@
             this.P_siedem.Text = "7";
             this.P_siedem.UseVisualStyleBackColor = true;
             this.P_siedem.Click += new System.EventHandler(this.P_siedem_Click);
+            this.P_siedem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_siedem.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_osiem
@@ -122,6 +126,7 @@
             this.P_osiem.Text = "8";
             this.P_osiem.UseVisualStyleBackColor = true;
             this.P_osiem.Click += new System.EventHandler(this.P_osiem_Click);
+            this.P_osiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_osiem.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_kropka
@@ -134,6 +139,7 @@
             this.P_kropka.Text = ".";
             this.P_kropka.UseVisualStyleBackColor = true;
             this.P_kropka.Click += new System.EventHandler(this.P_kropka_Click);
+            this.P_kropka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_kropka.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_dwa
@@ -146,6 +152,7 @@
             this.P_dwa.Text = "2";
             this.P_dwa.UseVisualStyleBackColor = true;
             this.P_dwa.Click += new System.EventHandler(this.P_dwa_Click);
+            this.P_dwa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_dwa.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_piec
@@ -158,6 +165,7 @@
             this.P_piec.Text = "5";
             this.P_piec.UseVisualStyleBackColor = true;
             this.P_piec.Click += new System.EventHandler(this.P_piec_Click);
+            this.P_piec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_piec.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_dziewiec
@@ -170,6 +178,7 @@
             this.P_dziewiec.Text = "9";
             this.P_dziewiec.UseVisualStyleBackColor = true;
             this.P_dziewiec.Click += new System.EventHandler(this.P_dziewiec_Click);
+            this.P_dziewiec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_dziewiec.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_rownosc
@@ -182,6 +191,7 @@
             this.P_rownosc.Text = "=";
             this.P_rownosc.UseVisualStyleBackColor = true;
             this.P_rownosc.Click += new System.EventHandler(this.P_rownosc_Click);
+            this.P_rownosc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_rownosc.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_trzy
@@ -194,6 +204,7 @@
             this.P_trzy.Text = "3";
             this.P_trzy.UseVisualStyleBackColor = true;
             this.P_trzy.Click += new System.EventHandler(this.P_trzy_Click);
+            this.P_trzy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_trzy.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_szesc
@@ -206,6 +217,7 @@
             this.P_szesc.Text = "6";
             this.P_szesc.UseVisualStyleBackColor = true;
             this.P_szesc.Click += new System.EventHandler(this.P_szesc_Click);
+            this.P_szesc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_szesc.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_clear
@@ -218,6 +230,7 @@
             this.P_clear.Text = "C";
             this.P_clear.UseVisualStyleBackColor = true;
             this.P_clear.Click += new System.EventHandler(this.P_clear_Click);
+            this.P_clear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_clear.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_pierwiastek
@@ -231,6 +244,7 @@
             this.P_pierwiastek.Text = "√";
             this.P_pierwiastek.UseVisualStyleBackColor = true;
             this.P_pierwiastek.Click += new System.EventHandler(this.P_pierwiastek_Click);
+            this.P_pierwiastek.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_pierwiastek.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_dzielenie
@@ -243,6 +257,7 @@
             this.P_dzielenie.Text = "/";
             this.P_dzielenie.UseVisualStyleBackColor = true;
             this.P_dzielenie.Click += new System.EventHandler(this.P_dzielenie_Click);
+            this.P_dzielenie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_dzielenie.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_minus
@@ -255,6 +270,7 @@
             this.P_minus.Text = "-";
             this.P_minus.UseVisualStyleBackColor = true;
             this.P_minus.Click += new System.EventHandler(this.P_minus_Click);
+            this.P_minus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_minus.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_procent
@@ -267,6 +283,7 @@
             this.P_procent.Text = "%";
             this.P_procent.UseVisualStyleBackColor = true;
             this.P_procent.Click += new System.EventHandler(this.P_procent_Click);
+            this.P_procent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_procent.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_znak
@@ -279,6 +296,7 @@
             this.P_znak.Text = "+/-";
             this.P_znak.UseVisualStyleBackColor = true;
             this.P_znak.Click += new System.EventHandler(this.P_znak_Click);
+            this.P_znak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_znak.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_razy
@@ -291,6 +309,7 @@
             this.P_razy.Text = "x";
             this.P_razy.UseVisualStyleBackColor = true;
             this.P_razy.Click += new System.EventHandler(this.P_razy_Click);
+            this.P_razy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_razy.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // P_plus
@@ -303,6 +322,7 @@
             this.P_plus.Text = "+";
             this.P_plus.UseVisualStyleBackColor = true;
             this.P_plus.Click += new System.EventHandler(this.P_plus_Click);
+            this.P_plus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
             this.P_plus.Resize += new System.EventHandler(this.P_procent_Resize);
             // 
             // Form1

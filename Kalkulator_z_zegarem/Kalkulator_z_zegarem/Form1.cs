@@ -29,7 +29,7 @@ namespace Kalkulator_z_zegarem
 
         private void P_kropka_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.Contains(",") && textBox1.Text.Contains("B³¹d"))  // warunek który uniemo¿liwia wpisania wielu kropek
+            if (!textBox1.Text.Contains(",") && !textBox1.Text.Contains("B³¹d"))  // warunek który uniemo¿liwia wpisania wielu kropek
             {
                 textBox1.Text += ",";
             }
@@ -329,6 +329,72 @@ namespace Kalkulator_z_zegarem
 
         private void P_procent_Resize(object sender, EventArgs e)
         {
+
+        }
+
+        private void KeyPress(object sender, KeyPressEventArgs e)
+        {
+            switch (e.KeyChar)
+            {
+                case '0':
+                    this.P_zero.PerformClick();
+                    break;
+                case '1':
+                    this.P_jeden.PerformClick();
+                    break;
+                case '2':
+                    this.P_dwa.PerformClick();
+                    break;
+                case '3':
+                    this.P_trzy.PerformClick();
+                    break;
+                case '4':
+                    this.P_cztery.PerformClick();
+                    break;
+                case '5':
+                    this.P_piec.PerformClick();
+                    break;
+                case '6':
+                    this.P_szesc.PerformClick();
+                    break;
+                case '7':
+                    this.P_siedem.PerformClick();
+                    break;
+                case '8':
+                    this.P_osiem.PerformClick();
+                    break;
+                case '9':
+                    this.P_dziewiec.PerformClick();
+                    break;
+                case '-':
+                    this.P_minus.PerformClick();
+                    break;
+                case '+':
+                    this.P_plus.PerformClick();
+                    break;
+                case 'c':
+                    this.P_clear.PerformClick();
+                    break;
+                case '=':
+                    this.P_rownosc.PerformClick();
+                    break;
+                case '%':
+                    this.P_procent.PerformClick(); 
+                    break;
+                case '`':
+                    this.P_pierwiastek.PerformClick();
+                    break;
+                case '*':
+                    this.P_razy.PerformClick();
+                    break;
+                case '/':
+                    this.P_dzielenie.PerformClick();
+                    break;
+                case '?': 
+                    this.P_znak.PerformClick();          // znak zapytania na klawiaturze odpowiada zmianie znaku
+                    break;
+
+            }
 
         }
     }
