@@ -7,6 +7,7 @@ namespace Kalkulator_z_zegarem
         private decimal wartosc2 = 0;
         private decimal wynik = 0;
         private string dzialanie = "+";
+        private bool tosamodzialanie = false;
 
 
         public Form1()
@@ -28,9 +29,9 @@ namespace Kalkulator_z_zegarem
 
         private void P_kropka_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.Contains("."))  // warunek który uniemo¿liwia wpisania wielu kropek
+            if (!textBox1.Text.Contains(","))  // warunek który uniemo¿liwia wpisania wielu kropek
             {
-                textBox1.Text += ".";
+                textBox1.Text += ",";
             }
         }
 
@@ -145,7 +146,9 @@ namespace Kalkulator_z_zegarem
         private void P_clear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
-            wartosc1 = 0;
+            tosamodzialanie = false;
+            wartosc2 = 0;
+            wartosc1 = 0;        // usuwa zapamietane dzialanie
         }
 
         private void P_znak_Click(object sender, EventArgs e)
@@ -162,44 +165,65 @@ namespace Kalkulator_z_zegarem
 
         private void P_minus_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
+            if (!string.IsNullOrEmpty(textBox1.Text))         // warunek ktory umozliwia zmienienie dzialania (mozna klikac kilka razy klawisz dzialania i nie bedzie zapisany najnowszy)
+            {
+                wartosc1 = decimal.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
             dzialanie = "-";
+            tosamodzialanie = false;
         }
 
         private void P_plus_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
+            if (!string.IsNullOrEmpty(textBox1.Text))         
+            {
+                wartosc1 = decimal.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
             dzialanie = "+";
+            tosamodzialanie = false;
         }
 
         private void P_razy_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
+            if (!string.IsNullOrEmpty(textBox1.Text))
+            {
+                wartosc1 = decimal.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
             dzialanie = "*";
+            tosamodzialanie = false;
         }
 
         private void P_dzielenie_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
+            if (!string.IsNullOrEmpty(textBox1.Text))
+            {
+                wartosc1 = decimal.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
             dzialanie = "/";
+            tosamodzialanie = false;
         }
 
-        private void P_procent_Click(object sender, EventArgs e)
+        private void P_procent_Click(object sender, EventArgs e)       // reszta z dzielenia
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
+            if (!string.IsNullOrEmpty(textBox1.Text))
+            {
+                wartosc1 = decimal.Parse(textBox1.Text);
+                textBox1.Clear();
+            }
             dzialanie = "%";
+            tosamodzialanie = false;
         }
 
         private void P_pierwiastek_Click(object sender, EventArgs e)
         {
-            wartosc1 = decimal.Parse(textBox1.Text);
+            wartosc1 = (decimal)double.Parse(textBox1.Text);
             textBox1.Clear();
-            dzialanie = "`";   // przypisalem pierwiastkowanie do tyldy
+            wynik = (decimal)Math.Sqrt((double)wartosc1);
+            textBox1.Text = wynik.ToString();
         }
 
         private void P_rownosc_Click(object sender, EventArgs e)
@@ -210,8 +234,56 @@ namespace Kalkulator_z_zegarem
                     wartosc2 = decimal.Parse(textBox1.Text);
                     wynik = wartosc1 - wartosc2;
                     textBox1.Text = wynik.ToString();
-                break;
+                    if (tosamodzialanie == false)
+                    {
+                        wartosc1 = wartosc2;
+                        tosamodzialanie = true;
+                    }
+
+                    break;
+                case "+":
+                    wartosc2 = decimal.Parse(textBox1.Text);
+                    wynik = wartosc1 + wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    if (tosamodzialanie == false)
+                    {
+                        wartosc1 = wartosc2;
+                        tosamodzialanie = true;
+                    }
+                    break;
+                case "/":
+                    wartosc2 = decimal.Parse(textBox1.Text);
+                    wynik = wartosc1 / wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    if (tosamodzialanie == false)
+                    {
+                        wartosc1 = wartosc2;
+                        tosamodzialanie = true;
+                    }
+                    break;
+                case "*":
+                    wartosc2 = decimal.Parse(textBox1.Text);
+                    wynik = wartosc1 * wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    if (tosamodzialanie == false)
+                    {
+                        wartosc1 = wartosc2;
+                        tosamodzialanie = true;
+                    }
+                    break;
+                case "%":
+                    wartosc2 = decimal.Parse(textBox1.Text);
+                    wynik = wartosc1 % wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    if (tosamodzialanie == false)
+                    {
+                        wartosc1 = wartosc2;
+                        tosamodzialanie = true;
+                    }
+                    break;
+
             }
+
         }
     }
 }
