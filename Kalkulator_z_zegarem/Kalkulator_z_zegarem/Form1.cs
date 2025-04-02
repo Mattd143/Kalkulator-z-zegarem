@@ -229,7 +229,7 @@ namespace Kalkulator_z_zegarem
             }
             else
             {
-                textBox1.Text = "B³¹d, nie mo¿na pierwiastkowaæ liczb ujemnych";
+                textBox1.Text = "B³¹d, pierwiastkowanie liczb ujemnych";
             }
         }
 
@@ -303,6 +303,11 @@ namespace Kalkulator_z_zegarem
                     break;
 
             }
+
+        }
+
+        private void P_procent_Resize(object sender, EventArgs e)
+        {
 
         }
     }
