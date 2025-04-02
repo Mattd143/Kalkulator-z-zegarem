@@ -327,11 +327,6 @@ namespace Kalkulator_z_zegarem
 
         }
 
-        private void P_procent_Resize(object sender, EventArgs e)
-        {
-
-        }
-
         private void KeyPress(object sender, KeyPressEventArgs e)
         {
             switch (e.KeyChar)
@@ -396,6 +391,26 @@ namespace Kalkulator_z_zegarem
 
             }
 
+        }
+
+        private void zieloneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\zielony.jpeg");
+        }
+
+        private void niebieskieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\niebieskie.jpg");
+        }
+
+        private void ró¿oweToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\ró¿owe.jpg");
+        }
+
+        private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
