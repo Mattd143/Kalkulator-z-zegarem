@@ -222,8 +222,15 @@ namespace Kalkulator_z_zegarem
         {
             wartosc1 = (decimal)double.Parse(textBox1.Text);
             textBox1.Clear();
-            wynik = (decimal)Math.Sqrt((double)wartosc1);
-            textBox1.Text = wynik.ToString();
+            if (wartosc1 >= 0)
+            {
+                wynik = (decimal)Math.Sqrt((double)wartosc1);                         
+                textBox1.Text = wynik.ToString();
+            }
+            else
+            {
+                textBox1.Text = "B³¹d, nie mo¿na pierwiastkowaæ liczb ujemnych";
+            }
         }
 
         private void P_rownosc_Click(object sender, EventArgs e)
@@ -231,14 +238,14 @@ namespace Kalkulator_z_zegarem
             switch (dzialanie)
             {
                 case "-":
-                    wartosc2 = decimal.Parse(textBox1.Text);
+                    if (tosamodzialanie == false) 
+                    {
+                        wartosc2 = decimal.Parse(textBox1.Text);
+                    }   
                     wynik = wartosc1 - wartosc2;
                     textBox1.Text = wynik.ToString();
-                    if (tosamodzialanie == false)
-                    {
-                        wartosc1 = wartosc2;
-                        tosamodzialanie = true;
-                    }
+                    wartosc1 = wynik;
+                    tosamodzialanie = true;
 
                     break;
                 case "+":
@@ -252,14 +259,14 @@ namespace Kalkulator_z_zegarem
                     }
                     break;
                 case "/":
-                    wartosc2 = decimal.Parse(textBox1.Text);
-                    wynik = wartosc1 / wartosc2;
-                    textBox1.Text = wynik.ToString();
                     if (tosamodzialanie == false)
                     {
-                        wartosc1 = wartosc2;
-                        tosamodzialanie = true;
+                        wartosc2 = decimal.Parse(textBox1.Text);
                     }
+                    wynik = wartosc1 / wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    wartosc1 = wynik;
+                    tosamodzialanie = true;
                     break;
                 case "*":
                     wartosc2 = decimal.Parse(textBox1.Text);
@@ -272,14 +279,14 @@ namespace Kalkulator_z_zegarem
                     }
                     break;
                 case "%":
-                    wartosc2 = decimal.Parse(textBox1.Text);
-                    wynik = wartosc1 % wartosc2;
-                    textBox1.Text = wynik.ToString();
                     if (tosamodzialanie == false)
                     {
-                        wartosc1 = wartosc2;
-                        tosamodzialanie = true;
+                        wartosc2 = decimal.Parse(textBox1.Text);
                     }
+                    wynik = wartosc1 % wartosc2;
+                    textBox1.Text = wynik.ToString();
+                    wartosc1 = wynik;
+                    tosamodzialanie = true;
                     break;
 
             }
