@@ -8,9 +8,9 @@
 
 
         public Form2 zegar;
-        
-        
-        
+        public static int loo = 0;
+
+
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -24,6 +24,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+            
         }
 
         #region Windows Form Designer generated code
@@ -434,6 +435,7 @@
             this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Kalkulator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

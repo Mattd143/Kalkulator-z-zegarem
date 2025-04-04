@@ -7,6 +7,7 @@
 
         public static int loo = 0;           // definicja zmiennej której użyjemy, by zapobiec włączaniu kilku okienek na raz
         public Form1 kalkulator;
+        public Form2 zegar;
         
         
         /// </summary>
@@ -18,17 +19,14 @@
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if(Form2.loo > 0)
-            {
-                Form2.loo--;
-            }
-
+            
             
             if (disposing && (components != null))
             {
                 components.Dispose();
             }
             base.Dispose(disposing);
+            
         }
 
         #region Windows Form Designer generated code
@@ -46,7 +44,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tarcza = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.zakończToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zmiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomarańczoweToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.niebieskieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.białeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otwórzKalkulatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.tarcza)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // godzina_minuta
@@ -105,6 +111,65 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.zakończToolStripMenuItem,
+            this.zmiToolStripMenuItem,
+            this.otwórzKalkulatorToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(679, 28);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // zakończToolStripMenuItem
+            // 
+            this.zakończToolStripMenuItem.Name = "zakończToolStripMenuItem";
+            this.zakończToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.zakończToolStripMenuItem.Text = "Zakończ";
+            this.zakończToolStripMenuItem.Click += new System.EventHandler(this.zakończToolStripMenuItem_Click);
+            // 
+            // zmiToolStripMenuItem
+            // 
+            this.zmiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pomarańczoweToolStripMenuItem,
+            this.niebieskieToolStripMenuItem,
+            this.białeToolStripMenuItem});
+            this.zmiToolStripMenuItem.Name = "zmiToolStripMenuItem";
+            this.zmiToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.zmiToolStripMenuItem.Text = "Wybierz tło";
+            this.zmiToolStripMenuItem.Click += new System.EventHandler(this.zmiToolStripMenuItem_Click);
+            // 
+            // pomarańczoweToolStripMenuItem
+            // 
+            this.pomarańczoweToolStripMenuItem.Name = "pomarańczoweToolStripMenuItem";
+            this.pomarańczoweToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.pomarańczoweToolStripMenuItem.Text = "Pomarańczowe";
+            this.pomarańczoweToolStripMenuItem.Click += new System.EventHandler(this.pomarańczoweToolStripMenuItem_Click);
+            // 
+            // niebieskieToolStripMenuItem
+            // 
+            this.niebieskieToolStripMenuItem.Name = "niebieskieToolStripMenuItem";
+            this.niebieskieToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.niebieskieToolStripMenuItem.Text = "Niebieskie";
+            this.niebieskieToolStripMenuItem.Click += new System.EventHandler(this.niebieskieToolStripMenuItem_Click);
+            // 
+            // białeToolStripMenuItem
+            // 
+            this.białeToolStripMenuItem.Name = "białeToolStripMenuItem";
+            this.białeToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.białeToolStripMenuItem.Text = "Białe";
+            this.białeToolStripMenuItem.Click += new System.EventHandler(this.białeToolStripMenuItem_Click);
+            // 
+            // otwórzKalkulatorToolStripMenuItem
+            // 
+            this.otwórzKalkulatorToolStripMenuItem.Name = "otwórzKalkulatorToolStripMenuItem";
+            this.otwórzKalkulatorToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.otwórzKalkulatorToolStripMenuItem.Text = "Otwórz kalkulator";
+            this.otwórzKalkulatorToolStripMenuItem.Click += new System.EventHandler(this.otwórzKalkulatorToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -116,11 +181,15 @@
             this.Controls.Add(this.dzien);
             this.Controls.Add(this.data);
             this.Controls.Add(this.godzina_minuta);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tarcza)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,5 +203,12 @@
         private Button button1;
         private PictureBox tarcza;
         private System.Windows.Forms.Timer timer1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem zakończToolStripMenuItem;
+        private ToolStripMenuItem zmiToolStripMenuItem;
+        private ToolStripMenuItem otwórzKalkulatorToolStripMenuItem;
+        private ToolStripMenuItem pomarańczoweToolStripMenuItem;
+        private ToolStripMenuItem niebieskieToolStripMenuItem;
+        private ToolStripMenuItem białeToolStripMenuItem;
     }
 }

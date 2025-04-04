@@ -31,6 +31,7 @@ namespace Kalkulator_z_zegarem
             InitializeComponent();
             this.kalkulator = null;
             Form2.loo++;
+           
         }
         public Form2(Form1 rodzic)
         {
@@ -149,6 +150,46 @@ namespace Kalkulator_z_zegarem
         private void dzien_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // this.Close();
+            Application.Exit(); // działa również na ukryte okienka
+        }
+
+        private void zmiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void niebieskieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.LightBlue;
+        }
+
+        private void białeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
+        }
+
+        private void pomarańczoweToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Peru;
+        }
+
+        private void otwórzKalkulatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Form1.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
+            {
+                
+                this.kalkulator = new Form1();
+                this.Hide();
+                
+                Form2.loo--;
+                this.kalkulator.ShowDialog();
+                
+            }
         }
     }
 }

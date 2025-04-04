@@ -8,11 +8,21 @@ namespace Kalkulator_z_zegarem
         private decimal wynik = 0;
         private string dzialanie = "+";
         private bool tosamodzialanie = false;
+        
 
 
         public Form1()
         {
             InitializeComponent();
+            this.zegar = null;
+            Form1.loo++;
+        }
+
+        public Form1(Form2 rodzic)
+        {
+            InitializeComponent();
+            this.zegar = rodzic;
+            Form1.loo++;
         }
 
         private void P_zero_Click(object sender, EventArgs e)
@@ -410,7 +420,8 @@ namespace Kalkulator_z_zegarem
 
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // this.Close();
+            Application.Exit(); // dzia³a równie¿ na ukryte okienka
         }
 
         private void otwórzZegarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -418,9 +429,19 @@ namespace Kalkulator_z_zegarem
             if (Form2.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
             {
                 this.zegar = new Form2();
-
+                this.Hide();
+                
+                Form1.loo--;
+                
                 this.zegar.ShowDialog();
+
+                
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
