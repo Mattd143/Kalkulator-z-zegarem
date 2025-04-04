@@ -4,5 +4,12 @@
   "success": true,
   "projectFilePath": "C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
