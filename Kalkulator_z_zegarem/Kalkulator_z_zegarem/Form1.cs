@@ -433,9 +433,11 @@ namespace Kalkulator_z_zegarem
                 
                 Form1.loo--;
                 
-                this.zegar.ShowDialog();
-
-                
+                zegar.ShowDialog();
+                foreach (Form f in Application.OpenForms.Cast<Form>().ToList())
+                {
+                    if (f != zegar) f.Close(); // Zamykamy inne okna, ale NIE nowo otwarte
+                }
             }
         }
 

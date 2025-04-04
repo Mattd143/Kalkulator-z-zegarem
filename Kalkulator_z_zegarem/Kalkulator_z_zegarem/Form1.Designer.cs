@@ -7,6 +7,7 @@
         /// </summary>
 
 
+        public Form1 kalkulator;
         public Form2 zegar;
         public static int loo = 0;
 
