@@ -25,6 +25,7 @@ namespace Kalkulator_z_zegarem
         int hourHand = 80;
         int width = 300;
         int height = 300;
+        private string kolor = "pomaranczowy";
 
         public Form2()
         {
@@ -73,7 +74,27 @@ namespace Kalkulator_z_zegarem
 
             int[] handcoord = new int[2];
             //czysczenie mapy i wypelnianie jej kolorem, każdy tik zegara czyści pictureboxa i rysuje na nowo tarcze ze wskazowkami
-            g.Clear(Color.Peru);
+
+
+
+
+            if(kolor == "pomaranczowy")
+            {
+                g.Clear(Color.Peru);
+            }
+            else if (kolor == "niebieski")
+            {
+                g.Clear(Color.LightBlue);
+            }
+            else if (kolor == "bialy")
+            {
+                g.Clear(Color.White);
+            }
+            // g.Clear(Color.Peru);
+            
+            
+            
+            
             //rysowanie tarczy
             g.DrawEllipse(new Pen(Color.Black, 1f), 0, 0, 300, 300);
 
@@ -166,16 +187,19 @@ namespace Kalkulator_z_zegarem
         private void niebieskieToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.LightBlue;
+            kolor = "niebieski";
         }
 
         private void białeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.White;
+            kolor = "bialy";
         }
 
         private void pomarańczoweToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.Peru;
+            kolor = "pomaranczowy";
         }
 
         private void otwórzKalkulatorToolStripMenuItem_Click(object sender, EventArgs e)

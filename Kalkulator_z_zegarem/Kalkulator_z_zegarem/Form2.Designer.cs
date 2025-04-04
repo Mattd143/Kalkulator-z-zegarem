@@ -100,7 +100,8 @@
             // 
             // tarcza
             // 
-            this.tarcza.Location = new System.Drawing.Point(187, 34);
+            this.tarcza.BackColor = System.Drawing.Color.Peru;
+            this.tarcza.Location = new System.Drawing.Point(187, 53);
             this.tarcza.Name = "tarcza";
             this.tarcza.Size = new System.Drawing.Size(388, 314);
             this.tarcza.TabIndex = 4;
