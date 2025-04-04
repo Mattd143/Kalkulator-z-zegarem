@@ -412,5 +412,15 @@ namespace Kalkulator_z_zegarem
         {
             this.Close();
         }
+
+        private void otwórzZegarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Form2.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
+            {
+                this.zegar = new Form2();
+
+                this.zegar.ShowDialog();
+            }
+        }
     }
 }

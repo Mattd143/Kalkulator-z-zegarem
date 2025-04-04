@@ -5,6 +5,12 @@
         /// <summary>
         ///  Required designer variable.
         /// </summary>
+
+
+        public Form2 zegar;
+        
+        
+        
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
@@ -51,11 +57,12 @@
             this.P_razy = new System.Windows.Forms.Button();
             this.P_plus = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wybierzTłoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zieloneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.niebieskieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.różoweToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.zamknijToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otwórzZegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +116,6 @@
             this.P_zero.UseVisualStyleBackColor = false;
             this.P_zero.Click += new System.EventHandler(this.P_zero_Click);
             this.P_zero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-         
             // 
             // P_siedem
             // 
@@ -124,7 +130,6 @@
             this.P_siedem.UseVisualStyleBackColor = false;
             this.P_siedem.Click += new System.EventHandler(this.P_siedem_Click);
             this.P_siedem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_osiem
             // 
@@ -138,7 +143,6 @@
             this.P_osiem.UseVisualStyleBackColor = false;
             this.P_osiem.Click += new System.EventHandler(this.P_osiem_Click);
             this.P_osiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_kropka
             // 
@@ -152,7 +156,6 @@
             this.P_kropka.UseVisualStyleBackColor = false;
             this.P_kropka.Click += new System.EventHandler(this.P_kropka_Click);
             this.P_kropka.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_dwa
             // 
@@ -166,7 +169,6 @@
             this.P_dwa.UseVisualStyleBackColor = false;
             this.P_dwa.Click += new System.EventHandler(this.P_dwa_Click);
             this.P_dwa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_piec
             // 
@@ -180,7 +182,6 @@
             this.P_piec.UseVisualStyleBackColor = false;
             this.P_piec.Click += new System.EventHandler(this.P_piec_Click);
             this.P_piec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_dziewiec
             // 
@@ -194,7 +195,6 @@
             this.P_dziewiec.UseVisualStyleBackColor = false;
             this.P_dziewiec.Click += new System.EventHandler(this.P_dziewiec_Click);
             this.P_dziewiec.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-           
             // 
             // P_rownosc
             // 
@@ -208,7 +208,6 @@
             this.P_rownosc.UseVisualStyleBackColor = false;
             this.P_rownosc.Click += new System.EventHandler(this.P_rownosc_Click);
             this.P_rownosc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-           
             // 
             // P_trzy
             // 
@@ -222,7 +221,6 @@
             this.P_trzy.UseVisualStyleBackColor = false;
             this.P_trzy.Click += new System.EventHandler(this.P_trzy_Click);
             this.P_trzy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-          
             // 
             // P_szesc
             // 
@@ -236,7 +234,6 @@
             this.P_szesc.UseVisualStyleBackColor = false;
             this.P_szesc.Click += new System.EventHandler(this.P_szesc_Click);
             this.P_szesc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-          
             // 
             // P_clear
             // 
@@ -250,7 +247,6 @@
             this.P_clear.UseVisualStyleBackColor = false;
             this.P_clear.Click += new System.EventHandler(this.P_clear_Click);
             this.P_clear.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_pierwiastek
             // 
@@ -265,7 +261,6 @@
             this.P_pierwiastek.UseVisualStyleBackColor = false;
             this.P_pierwiastek.Click += new System.EventHandler(this.P_pierwiastek_Click);
             this.P_pierwiastek.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-          
             // 
             // P_dzielenie
             // 
@@ -279,7 +274,6 @@
             this.P_dzielenie.UseVisualStyleBackColor = false;
             this.P_dzielenie.Click += new System.EventHandler(this.P_dzielenie_Click);
             this.P_dzielenie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_minus
             // 
@@ -293,7 +287,6 @@
             this.P_minus.UseVisualStyleBackColor = false;
             this.P_minus.Click += new System.EventHandler(this.P_minus_Click);
             this.P_minus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_procent
             // 
@@ -307,7 +300,6 @@
             this.P_procent.UseVisualStyleBackColor = false;
             this.P_procent.Click += new System.EventHandler(this.P_procent_Click);
             this.P_procent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-          
             // 
             // P_znak
             // 
@@ -321,7 +313,6 @@
             this.P_znak.UseVisualStyleBackColor = false;
             this.P_znak.Click += new System.EventHandler(this.P_znak_Click);
             this.P_znak.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-           
             // 
             // P_razy
             // 
@@ -335,7 +326,6 @@
             this.P_razy.UseVisualStyleBackColor = false;
             this.P_razy.Click += new System.EventHandler(this.P_razy_Click);
             this.P_razy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // P_plus
             // 
@@ -349,7 +339,6 @@
             this.P_plus.UseVisualStyleBackColor = false;
             this.P_plus.Click += new System.EventHandler(this.P_plus_Click);
             this.P_plus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.KeyPress);
-            
             // 
             // menuStrip1
             // 
@@ -357,12 +346,20 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.zamknijToolStripMenuItem,
-            this.wybierzTłoToolStripMenuItem});
+            this.wybierzTłoToolStripMenuItem,
+            this.otwórzZegarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(626, 28);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // zamknijToolStripMenuItem
+            // 
+            this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
+            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.zamknijToolStripMenuItem.Text = "Zamknij";
+            this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
             // 
             // wybierzTłoToolStripMenuItem
             // 
@@ -377,30 +374,30 @@
             // zieloneToolStripMenuItem
             // 
             this.zieloneToolStripMenuItem.Name = "zieloneToolStripMenuItem";
-            this.zieloneToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.zieloneToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.zieloneToolStripMenuItem.Text = "Zielone";
             this.zieloneToolStripMenuItem.Click += new System.EventHandler(this.zieloneToolStripMenuItem_Click);
             // 
             // niebieskieToolStripMenuItem
             // 
             this.niebieskieToolStripMenuItem.Name = "niebieskieToolStripMenuItem";
-            this.niebieskieToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.niebieskieToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.niebieskieToolStripMenuItem.Text = "Niebieskie";
             this.niebieskieToolStripMenuItem.Click += new System.EventHandler(this.niebieskieToolStripMenuItem_Click);
             // 
             // różoweToolStripMenuItem
             // 
             this.różoweToolStripMenuItem.Name = "różoweToolStripMenuItem";
-            this.różoweToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.różoweToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
             this.różoweToolStripMenuItem.Text = "Różowe";
             this.różoweToolStripMenuItem.Click += new System.EventHandler(this.różoweToolStripMenuItem_Click);
             // 
-            // zamknijToolStripMenuItem
+            // otwórzZegarToolStripMenuItem
             // 
-            this.zamknijToolStripMenuItem.Name = "zamknijToolStripMenuItem";
-            this.zamknijToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
-            this.zamknijToolStripMenuItem.Text = "Zamknij";
-            this.zamknijToolStripMenuItem.Click += new System.EventHandler(this.zamknijToolStripMenuItem_Click);
+            this.otwórzZegarToolStripMenuItem.Name = "otwórzZegarToolStripMenuItem";
+            this.otwórzZegarToolStripMenuItem.Size = new System.Drawing.Size(112, 24);
+            this.otwórzZegarToolStripMenuItem.Text = "Otwórz zegar";
+            this.otwórzZegarToolStripMenuItem.Click += new System.EventHandler(this.otwórzZegarToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -473,5 +470,6 @@
         private ToolStripMenuItem niebieskieToolStripMenuItem;
         private ToolStripMenuItem różoweToolStripMenuItem;
         private ToolStripMenuItem zamknijToolStripMenuItem;
+        private ToolStripMenuItem otwórzZegarToolStripMenuItem;
     }
 }

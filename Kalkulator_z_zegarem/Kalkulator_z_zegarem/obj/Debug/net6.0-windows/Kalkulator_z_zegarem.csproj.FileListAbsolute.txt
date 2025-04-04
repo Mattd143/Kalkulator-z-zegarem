@@ -33,3 +33,4 @@ C:\Users\Mateu\Source\Repos\Mattd143\Kalkulator-z-zegarem\Kalkulator_z_zegarem\K
 C:\Users\Mateu\Source\Repos\Mattd143\Kalkulator-z-zegarem\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.genruntimeconfig.cache
 C:\Users\Mateu\Source\Repos\Mattd143\Kalkulator-z-zegarem\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\ref\Kalkulator_z_zegarem.dll
 C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.Properties.Resources.resources
+C:\Users\Mati\source\repos\OSK\Kalkulator\Kalkulator_z_zegarem\Kalkulator_z_zegarem\obj\Debug\net6.0-windows\Kalkulator_z_zegarem.Form2.resources
