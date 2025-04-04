@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "wJ3gFHWiuqsl97C1Fy6htfPGUiXxc5Uqd58u0RdI/kboZ5gkYPvBNp/TiG8hMLg1hn5KHAQPjboUhyvuI2KF0w==",
+  "dgSpecHash": "0MpUKRU/S6Se1uUxqSetyyHRJ1VdSpi2igrkQDKtGUWodKI8LQlGM9VCHpe4MIXgQs0c7w7cJaqO8UOB9ApHIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\krzys\\source\\repos\\zegarkurwajebanygithabzajebany\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
+  "projectFilePath": "C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
