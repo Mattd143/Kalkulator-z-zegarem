@@ -180,7 +180,7 @@ namespace Kalkulator_z_zegarem
         {
             if (!textBox1.Text.Contains("B³¹d"))
             {
-                if (!string.IsNullOrEmpty(textBox1.Text))         // warunek ktory umozliwia zmienienie dzialania (mozna klikac kilka razy klawisz dzialania i nie bedzie zapisany najnowszy)
+                if (!string.IsNullOrEmpty(textBox1.Text))         // warunek ktory umozliwia zmienienie dzialania (mozna klikac kilka razy klawisz dzialania i bedzie zapisany najnowszy)
                 {
                     wartosc1 = decimal.Parse(textBox1.Text);
                     textBox1.Clear();
