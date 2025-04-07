@@ -405,17 +405,17 @@ namespace Kalkulator_z_zegarem
 
         private void zieloneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\zielony.jpeg");
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Zdjecia\\85e15e1b-f8aa-45f2-adc1-9d90f1bf08c6.jfif");
         }
 
         private void niebieskieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\niebieskie.jpg");
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Zdjecia\\0a62b64c-3c11-497e-8229-3fbe9f86f047.jfif");
         }
 
         private void ró¿oweToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = Image.FromFile("C:\\Users\\Mati\\source\\repos\\OSK\\Kalkulator\\Kalkulator_z_zegarem\\zdjêcia\\ró¿owe.jpg");
+            this.BackgroundImage = Image.FromFile("C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Zdjecia\\5c760003-527c-4569-88fc-a4dbdca30d17.jfif");
         }
 
         private void zamknijToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\krzys\\source\\repos\\kalkulator_zegar_aktualny\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj": {}
+    "C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\krzys\\source\\repos\\kalkulator_zegar_aktualny\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj": {
+    "C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\krzys\\source\\repos\\kalkulator_zegar_aktualny\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
+        "projectUniqueName": "C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
         "projectName": "Kalkulator_z_zegarem",
-        "projectPath": "C:\\Users\\krzys\\source\\repos\\kalkulator_zegar_aktualny\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
-        "packagesPath": "C:\\Users\\krzys\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\krzys\\source\\repos\\kalkulator_zegar_aktualny\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\obj\\",
+        "projectPath": "C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem.csproj",
+        "packagesPath": "C:\\Users\\Mateu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateu\\source\\repos\\C++\\Cisek_laby\\Zad1_Kalkulator\\Kalkulator_z_zegarem\\Kalkulator_z_zegarem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\krzys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
