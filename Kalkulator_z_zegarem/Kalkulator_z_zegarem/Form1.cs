@@ -429,11 +429,8 @@ namespace Kalkulator_z_zegarem
             if (Form2.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
             {
                 this.zegar = new Form2();
-                // this.Hide();
-                
-                
                 zegar.ShowDialog();
-                
+
             }
         }
 
