@@ -75,9 +75,6 @@ namespace Kalkulator_z_zegarem
             int[] handcoord = new int[2];
             //czysczenie mapy i wypelnianie jej kolorem, każdy tik zegara czyści pictureboxa i rysuje na nowo tarcze ze wskazowkami
 
-
-
-
             if(kolor == "pomaranczowy")
             {
                 g.Clear(Color.Peru);
@@ -93,8 +90,7 @@ namespace Kalkulator_z_zegarem
             // g.Clear(Color.Peru);
             
             
-            
-            
+  
             //rysowanie tarczy
             g.DrawEllipse(new Pen(Color.Black, 1f), 0, 0, 300, 300);
 
@@ -102,12 +98,12 @@ namespace Kalkulator_z_zegarem
             Brush brush = Brushes.Black;
 
             // Rysowanie cyfr, wykorzystanie trygonometrii 
+           
+            
             for (int i = 1; i <= 12; i++)
             {
-                double angle = Math.PI / 6 * (i - 3); // Przesunięcie, bo 12 = 0° na górze
-                int x = (int)(cx + secHand * Math.Cos(angle)) - 10;
-                int y = (int)(cy + secHand * Math.Sin(angle)) - 10;
-                g.DrawString(i.ToString(), font, brush, new PointF(x, y));
+                int[] pos = hourNumberCoord(i, secHand); // secHand to promień
+                g.DrawString(i.ToString(), font, brush, new PointF(pos[0] - 10, pos[1] - 10));
             }
 
 
@@ -167,6 +163,28 @@ namespace Kalkulator_z_zegarem
             }
             return coord;
         }
+
+        private int[] hourNumberCoord(int hour, int radius)
+        {
+            int[] coord = new int[2];
+
+            // 1 godzina to 30 stopni
+            int val = hour * 30;
+
+            if (val >= 0 && val <= 180)
+            {
+                coord[0] = cx + (int)(radius * Math.Sin(Math.PI * val / 180));
+                coord[1] = cy - (int)(radius * Math.Cos(Math.PI * val / 180));
+            }
+            else
+            {
+                coord[0] = cx - (int)(radius * -Math.Sin(Math.PI * val / 180));
+                coord[1] = cy - (int)(radius * Math.Cos(Math.PI * val / 180));
+            }
+
+            return coord;
+        }
+
 
         private void dzien_Click(object sender, EventArgs e)
         {

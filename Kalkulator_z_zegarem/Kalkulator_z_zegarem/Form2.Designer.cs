@@ -59,9 +59,9 @@
             // 
             this.godzina_minuta.AutoSize = true;
             this.godzina_minuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.godzina_minuta.Location = new System.Drawing.Point(162, 34);
+            this.godzina_minuta.Location = new System.Drawing.Point(142, 26);
             this.godzina_minuta.Name = "godzina_minuta";
-            this.godzina_minuta.Size = new System.Drawing.Size(249, 91);
+            this.godzina_minuta.Size = new System.Drawing.Size(204, 73);
             this.godzina_minuta.TabIndex = 0;
             this.godzina_minuta.Text = "label1";
             this.godzina_minuta.UseWaitCursor = true;
@@ -70,9 +70,9 @@
             // 
             this.data.AutoSize = true;
             this.data.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.data.Location = new System.Drawing.Point(209, 179);
+            this.data.Location = new System.Drawing.Point(183, 134);
             this.data.Name = "data";
-            this.data.Size = new System.Drawing.Size(138, 51);
+            this.data.Size = new System.Drawing.Size(109, 39);
             this.data.TabIndex = 1;
             this.data.Text = "label2";
             // 
@@ -80,9 +80,9 @@
             // 
             this.dzien.AutoSize = true;
             this.dzien.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dzien.Location = new System.Drawing.Point(254, 274);
+            this.dzien.Location = new System.Drawing.Point(222, 206);
             this.dzien.Name = "dzien";
-            this.dzien.Size = new System.Drawing.Size(138, 51);
+            this.dzien.Size = new System.Drawing.Size(109, 39);
             this.dzien.TabIndex = 2;
             this.dzien.Text = "label3";
             this.dzien.Click += new System.EventHandler(this.dzien_Click);
@@ -90,9 +90,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PeachPuff;
-            this.button1.Location = new System.Drawing.Point(171, 373);
+            this.button1.Location = new System.Drawing.Point(204, 365);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(328, 66);
+            this.button1.Size = new System.Drawing.Size(287, 50);
             this.button1.TabIndex = 3;
             this.button1.Text = "Zmień sposób wyświetlania zegara";
             this.button1.UseVisualStyleBackColor = false;
@@ -101,9 +102,10 @@
             // tarcza
             // 
             this.tarcza.BackColor = System.Drawing.Color.Peru;
-            this.tarcza.Location = new System.Drawing.Point(187, 53);
+            this.tarcza.Location = new System.Drawing.Point(164, 40);
+            this.tarcza.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tarcza.Name = "tarcza";
-            this.tarcza.Size = new System.Drawing.Size(388, 314);
+            this.tarcza.Size = new System.Drawing.Size(340, 302);
             this.tarcza.TabIndex = 4;
             this.tarcza.TabStop = false;
             // 
@@ -121,14 +123,15 @@
             this.otwórzKalkulatorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(679, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(719, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // zakończToolStripMenuItem
             // 
             this.zakończToolStripMenuItem.Name = "zakończToolStripMenuItem";
-            this.zakończToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.zakończToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.zakończToolStripMenuItem.Text = "Zakończ";
             this.zakończToolStripMenuItem.Click += new System.EventHandler(this.zakończToolStripMenuItem_Click);
             // 
@@ -139,44 +142,44 @@
             this.niebieskieToolStripMenuItem,
             this.białeToolStripMenuItem});
             this.zmiToolStripMenuItem.Name = "zmiToolStripMenuItem";
-            this.zmiToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.zmiToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.zmiToolStripMenuItem.Text = "Wybierz tło";
             this.zmiToolStripMenuItem.Click += new System.EventHandler(this.zmiToolStripMenuItem_Click);
             // 
             // pomarańczoweToolStripMenuItem
             // 
             this.pomarańczoweToolStripMenuItem.Name = "pomarańczoweToolStripMenuItem";
-            this.pomarańczoweToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.pomarańczoweToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.pomarańczoweToolStripMenuItem.Text = "Pomarańczowe";
             this.pomarańczoweToolStripMenuItem.Click += new System.EventHandler(this.pomarańczoweToolStripMenuItem_Click);
             // 
             // niebieskieToolStripMenuItem
             // 
             this.niebieskieToolStripMenuItem.Name = "niebieskieToolStripMenuItem";
-            this.niebieskieToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.niebieskieToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.niebieskieToolStripMenuItem.Text = "Niebieskie";
             this.niebieskieToolStripMenuItem.Click += new System.EventHandler(this.niebieskieToolStripMenuItem_Click);
             // 
             // białeToolStripMenuItem
             // 
             this.białeToolStripMenuItem.Name = "białeToolStripMenuItem";
-            this.białeToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.białeToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.białeToolStripMenuItem.Text = "Białe";
             this.białeToolStripMenuItem.Click += new System.EventHandler(this.białeToolStripMenuItem_Click);
             // 
             // otwórzKalkulatorToolStripMenuItem
             // 
             this.otwórzKalkulatorToolStripMenuItem.Name = "otwórzKalkulatorToolStripMenuItem";
-            this.otwórzKalkulatorToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.otwórzKalkulatorToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
             this.otwórzKalkulatorToolStripMenuItem.Text = "Otwórz kalkulator";
             this.otwórzKalkulatorToolStripMenuItem.Click += new System.EventHandler(this.otwórzKalkulatorToolStripMenuItem_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Peru;
-            this.ClientSize = new System.Drawing.Size(679, 467);
+            this.ClientSize = new System.Drawing.Size(719, 468);
             this.Controls.Add(this.tarcza);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dzien);
@@ -185,6 +188,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
