@@ -193,7 +193,6 @@ namespace Kalkulator_z_zegarem
 
         private void zakończToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // this.Close();
             Application.Exit(); // działa również na ukryte okienka
         }
 
@@ -222,16 +221,8 @@ namespace Kalkulator_z_zegarem
 
         private void otwórzKalkulatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Form1.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
-            {
-                
-                this.kalkulator = new Form1();
-                this.Hide();
-                
-                Form2.loo--;
-                this.kalkulator.ShowDialog();
-                
-            }
+            this.Close();
+            Form2.loo--;
         }
     }
 }

@@ -429,15 +429,11 @@ namespace Kalkulator_z_zegarem
             if (Form2.loo == 0)   // zabezpieczenie przed otwarciem wiecej niz jednego okna
             {
                 this.zegar = new Form2();
-                this.Hide();
+                // this.Hide();
                 
-                Form1.loo--;
                 
                 zegar.ShowDialog();
-                foreach (Form f in Application.OpenForms.Cast<Form>().ToList())
-                {
-                    if (f != zegar) f.Close(); // Zamykamy inne okna, ale NIE nowo otwarte
-                }
+                
             }
         }
 
